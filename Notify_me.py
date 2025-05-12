@@ -1,17 +1,13 @@
 import os
-from winotify import Notification, audio
+from plyer import notification
 from os import getcwd
 
 def Alert(Text):
-    icon_path = fr"{getcwd()}\file (3).png"
+    icon_path = os.path.join(getcwd(), "file (3).png")
 
-    toast = Notification(
-        app_id="Time Management Assistant Ai",
-        title=Text,
-        duration="long",
-        icon=icon_path
+    notification.notify(
+        title="Time Management Assistant Ai",
+        message=Text,
+        app_icon=icon_path,
+        timeout=10  # duration in seconds
     )
-
-    toast.set_audio(audio.LoopingAlarm, loop=False)
-
-    toast.show()
