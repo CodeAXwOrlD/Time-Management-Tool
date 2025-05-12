@@ -49,4 +49,34 @@ Show
                       2. tell me - try like "tell me to sleep at 09:00pm"
 ```
 
+## 🛠️ How to Run the Project
+
+**Step 1: Create a Virtual Environment**
+```bash
+python3 -m venv venv
+```
+
+**Step 2: Activate the Virtual Environment**
+- On Linux/Mac:
+```bash
+source venv/bin/activate
+```
+- On Windows:
+```bash
+venv\Scripts\activate
+```
+
+**Step 3: Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**Step 4: Run the Application**
+```bash
+python main.py
+```
+
+**Step 5: Follow the On-Screen Instructions**
+- Use commands like `show`, `tell me`, or `exit` to interact with the tool.
+
 *For more details and updates on our interstellar missions, visit our [GitHub repository](https://github.com/AnubhavChaturvedi-GitHub/Time-Management-Tool).*

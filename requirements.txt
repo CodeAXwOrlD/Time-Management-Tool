@@ -46,8 +46,6 @@ click==8.1.7
 
 colorama==0.4.6
 
-comtypes==1.4.4
-
 cryptography==42.0.8
 
 ctranslate2==4.3.1
@@ -260,8 +258,6 @@ pyparsing==3.1.2
 
 pyperclip==1.9.0
 
-pypiwin32==223
-
 pyramid==2.0.2
 
 pyramid_jinja2==2.10.1
@@ -281,8 +277,6 @@ pytweening==1.2.0
 pytz==2024.1
 
 pywhatkit==5.4
-
-pywin32==306
 
 pywin32-ctypes==0.2.2
 
@@ -360,27 +354,6 @@ uritemplate==4.1.1
 
 urllib3==2.2.2
 
-uv==0.2.24
-
-venusian==3.1.0
-
-vosk==0.3.45
-
-webdriver-manager==4.0.1
-
-WebOb==1.8.7
-
-websocket-client==1.8.0
-
-websockets==12.0
-
-Werkzeug==3.0.3
-
-wikipedia==1.4.0
-
-win10toast==0.9
-
-# Removed winotify as it is not compatible with Linux
 wsproto==1.2.0
 
 yarl==1.9.4

@@ -68,6 +68,7 @@ print("Welcome To the Time Management Assistant Tool")
 print("Available Commands:")
 print("1. show - to show the Schedule file")
 print("2. tell me - try like 'tell me to sleep at 09:00pm'")
+print("3. exit - to exit the application")
 
 # Example usage:
 file_path = os.path.join(getcwd(), 'schedule.txt')
@@ -79,6 +80,9 @@ def Modifier():
             subprocess.run(["xdg-open", file_path])
         elif pass_key.startswith("tell me"):
             input_manage(pass_key)
+        elif pass_key == "exit":
+            print("Exiting the application. Goodbye!")
+            break
         else:
             if is_Online():
                 speak("Invalid Command")
@@ -86,6 +90,7 @@ def Modifier():
                       ______ Available commands _____
                       1. show - to show the Schedule file
                       2. tell me - try like "tell me to sleep at 09:00pm"
+                      3. exit - to exit the application
                       ''')
             else:
                 Ospeak("Invalid Input")
