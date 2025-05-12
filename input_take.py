@@ -1,5 +1,7 @@
 import re
 from os import getcwd
+import os
+
 def parse_input(input_text):
     # Regular expression to extract time in format like "07:30 PM" or "8:00pm"
     time_regex = r'(\d{1,2}:\d{2} ?(?:AM|PM|am|pm))'
@@ -45,6 +47,6 @@ def input_manage(input_text):
         output, time = parse_input(input_text)
 
         if output != "No valid time found in input":
-            save_to_file(output, time, fr'{getcwd()}\schedule.txt')
+            save_to_file(output, time, os.path.join(getcwd(), 'schedule.txt'))
         else:
             print(output)

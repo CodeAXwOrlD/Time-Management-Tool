@@ -1,7 +1,7 @@
-import pyttsx3
+from gtts import gTTS
+import os
 
 def Ospeak(text):
-    engine = pyttsx3.init()
-    voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[1].id)
-    engine.say(text)
+    tts = gTTS(text=text, lang='en')
+    tts.save("output.mp3")
+    os.system("mpg123 output.mp3")

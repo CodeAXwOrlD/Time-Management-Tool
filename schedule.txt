@@ -7,3 +7,4 @@
 08:11PM = Sir tis is Your sleep time
 09:11PM = Sir tis is Your make food time
 05:20PM = Sir tis is Your sleep time
+10:00AM = Sir tis is Your sleep time

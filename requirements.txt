@@ -391,3 +391,5 @@ zope.deprecation==5.0
 
 zope.interface==6.4.post2
 
+gTTS==2.3.2
+

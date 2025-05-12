@@ -4,7 +4,7 @@ from colorama import Fore, Back, Style
 from pyfiglet import Figlet
 import os
 import threading
-from playsound import playsound
+from pygame import mixer
 from os import getcwd
 
 # Initialize colorama
@@ -24,10 +24,17 @@ def print_styled_message(message, font="starwars"):
         time.sleep(0.009)  # Adjust the speed of animation here (in seconds)
     print(Style.RESET_ALL)
 
+def play_alarm():
+    mixer.init()
+    mixer.music.load(os.path.join(getcwd(), "clock-alarm-8761.mp3"))
+    mixer.music.play()
+    while mixer.music.get_busy():
+        pass
+    mixer.quit()
 
 def intro(text):
     t1 = threading.Thread(target=print_styled_message,args=(text,))
-    t2 = threading.Thread(target=playsound,args=(fr"{getcwd()}\clock-alarm-8761.mp3",))
+    t2 = threading.Thread(target=play_alarm)
     t1.start()
     t2.start()
     t1.join()

@@ -1,6 +1,7 @@
 import os
 import time
 import threading
+import subprocess
 from Notify_me import Alert
 from Speak import speak
 from offline_speak import Ospeak
@@ -57,19 +58,25 @@ intro("TMA - Tool")
 if  is_Online():
     print("Welcome To the Time Management Assistant Tool")
     speak("Welcome To the Time Management Assistant Tool")
-    print("@Cradit:Anubhav Chaturvedi")
+    print("@Credit:CodeAXwOrlD")
 else:
     print("Welcome To the Time Management Assistant Tool")
     Ospeak("Welcome To the Time Management Assistant Tool")
-    print("©️Cradit: Anubhav Chaturvedi")
+    print("©️Credit: CodeAXwOrlD")
+
+print("Welcome To the Time Management Assistant Tool")
+print("Available Commands:")
+print("1. show - to show the Schedule file")
+print("2. tell me - try like 'tell me to sleep at 09:00pm'")
+
 # Example usage:
-file_path = fr'{getcwd()}\schedule.txt'
+file_path = os.path.join(getcwd(), 'schedule.txt')
 
 def Modifier():
     while True:
         pass_key = input()
         if "show" in pass_key:
-            os.startfile(file_path)
+            subprocess.run(["xdg-open", file_path])
         elif pass_key.startswith("tell me"):
             input_manage(pass_key)
         else:
