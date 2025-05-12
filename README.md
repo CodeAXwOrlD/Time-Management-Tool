@@ -2,7 +2,10 @@
 
 Welcome to TMA - the ultimate tool designed to streamline your tasks and manage your time efficiently. With its sleek, futuristic interface and cutting-edge functionality, TMA is here to revolutionize how you stay organized.
 
-![Screenshot](https://github.com/AnubhavChaturvedi-GitHub/Time-Management-Tool/blob/main/Screenshot%202024-07-19%20174610.png)
+## Screenshots
+
+![Screenshot 1](Screenshot%20from%202025-05-12%2021-30-49.png)
+![Screenshot 2](Screenshot%20from%202025-05-12%2021-31-10.png)
 
 ## 🚀 SetUp
 
